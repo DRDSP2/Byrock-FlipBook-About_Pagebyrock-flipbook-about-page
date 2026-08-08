@@ -8,6 +8,8 @@ function render() {
   $('node-title').textContent = node.title;
   $('node-summary').textContent = node.summary;
   $('visual').setAttribute('aria-label', node.media.alt);
+  $('visual').style.backgroundImage = node.media.src ? `url("${node.media.src}")` : "";
+  $('visual').classList.toggle('has-image', Boolean(node.media.src));
   const milestones = node.milestones || [];
   const milestoneList = document.getElementById('milestones');
   if (milestoneList) {
