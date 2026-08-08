@@ -8,7 +8,7 @@
     "start": "node src/server.mjs",
     "dev": "node --watch src/server.mjs",
     "seed": "node scripts/seed.mjs",
-    "check": "node --check src/server.mjs && node --check scripts/seed.mjs"
+    "check": "node --check src/server.mjs && node --check api/index.mjs && node --check scripts/seed.mjs && node scripts/check-story.mjs"
   },
   "engines": { "node": ">=20" }
 }

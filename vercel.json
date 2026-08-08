@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "api/index.mjs": {
+      "includeFiles": "data/story.json"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/story", "destination": "/api?route=story" },
+    { "source": "/health", "destination": "/api?route=health" },
+    { "source": "/(.*)", "destination": "/api?route=static&path=/$1" }
+  ]
+}

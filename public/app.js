@@ -38,11 +38,23 @@ function render() {
 }
 
 async function start() {
-  state.story = await fetch('/api/story').then((response) => response.json());
-  state.current = state.story.rootNodeId;
-  $('begin').closest('.hero').hidden = true;
-  $('explorer').hidden = false;
-  render();
+  const error = $('story-error');
+  error.hidden = true;
+  try {
+    const response = await fetch('/api/story', { headers: { accept: 'application/json' } });
+    if (!response.ok) throw new Error(`Story request failed with ${response.status}`);
+    const story = await response.json();
+    const rootNode = story.nodes?.find((node) => node.id === story.rootNodeId);
+    if (!rootNode) throw new Error('Story root node is missing');
+    state.story = story;
+    state.current = story.rootNodeId;
+    $('begin').closest('.hero').hidden = true;
+    $('explorer').hidden = false;
+    render();
+  } catch (loadError) {
+    console.error(loadError);
+    error.hidden = false;
+  }
 }
 
 $('begin').addEventListener('click', start);

@@ -23,7 +23,22 @@ Approved story content lives in `data/story.json`. Each node has a stable `id`, 
 
 ## Environment and controls
 
-Copy `.env.example` to `.env` if you need overrides. `CONTENT_MODE=approved-only` is the intended default. `RATE_LIMIT_PER_MINUTE`, `LOG_LEVEL`, and `ADMIN_SEED_TOKEN` are reserved for the next server hardening step; no secret is required to run the local scaffold. Never put provider credentials in `public/` or commit real secrets.
+Copy `.env.example` to `.env` if you need overrides. `CONTENT_MODE=approved-only` is the intended default. Never put provider credentials in `public/` or commit real secrets.
+
+### Private staging preview
+
+Use HTTP Basic Auth for a review-only deployment. The server fails closed if private mode is enabled without a password:
+
+```bash
+PREVIEW_MODE=private \
+PREVIEW_USER=reviewer \
+PREVIEW_PASSWORD='use-a-long-random-password' \
+npm start
+```
+
+Configure the same environment variables in the hosting provider's staging/preview project only. Do not set them on the future public production deployment. The password is never included in the browser bundle or story data, and all routes—including `/health` and `/api/story`—are protected.
+
+For a hosted preview, use a provider-generated preview hostname or an unadvertised staging subdomain. Do not connect `story.byrock.com` until the launch-gate approvals in `docs/LAUNCH-GATE.md` are complete.
 
 ## Embedding
 
