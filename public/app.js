@@ -8,6 +8,16 @@ function render() {
   $('node-title').textContent = node.title;
   $('node-summary').textContent = node.summary;
   $('visual').setAttribute('aria-label', node.media.alt);
+  const milestones = node.milestones || [];
+  const milestoneList = document.getElementById('milestones');
+  if (milestoneList) {
+    milestoneList.replaceChildren(...milestones.map((milestone) => {
+      const item = document.createElement('li');
+      item.innerHTML = `<strong>${milestone.year}</strong><span>${milestone.label}</span>`;
+      return item;
+    }));
+    milestoneList.hidden = milestones.length === 0;
+  }
   $('citations').replaceChildren(...node.citations.map((citation) => {
     const label = typeof citation === 'string' ? citation : citation.label;
     if (!citation.url) {

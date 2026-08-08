@@ -19,7 +19,7 @@ Open `http://localhost:3000`. Check `http://localhost:3000/health` for a machine
 
 ## Content model
 
-Approved story content lives in `data/story.json`. Each node has a stable `id`, title, accessible summary, tags, media alt text, citations, and an explicit `allowedBranches` list. Run `npm run seed` to restore the placeholder file. A future CMS or API can replace the file behind the same `/api/story` contract.
+Approved story content lives in `data/story.json`. Each node has a stable `id`, title, accessible summary, tags, media alt text, citations, and an explicit `allowedBranches` list. Public citations may include a `url`; internal or confidential sources remain filename-only. Timeline nodes may include draft `milestones`, and team nodes may include draft `teamMembers` with approval status. Run `npm run seed` to normalize the JSON file. A future CMS or API can replace the file behind the same `/api/story` contract.
 
 ## Environment and controls
 

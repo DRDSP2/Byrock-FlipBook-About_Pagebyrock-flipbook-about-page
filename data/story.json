@@ -99,7 +99,7 @@
     {
       "id": "technology-evolution",
       "title": "From PTP-100 to PTP-102",
-      "summary": "The laminitis program evolved through three scientific generations: PTP-100, an early antibody-based concept rooted in camel heavy-chain antibody technology; PTP-101, a synthetic peptide approach aimed at metalloprotease inhibition; and PTP-102, described in company materials as a synthetic nonglucocorticoid 21-aminosteroid and methylated tirilazad. The sequence represents scientific refinement, not commercial progression or approval.",
+      "summary": "The laminitis program is presented as a sequence of draft program milestones rather than exact invention dates: 2015 PTP-100, an early camelid antibody and plasma-derived concept; 2019 PTP-101, a synthetic peptide approach aimed at metalloprotease inhibition; and 2022 PTP-102, a synthetic nonglucocorticoid 21-aminosteroid and methylated tirilazad program. The sequence represents scientific refinement, not commercial progression or approval.",
       "tags": [
         "timeline",
         "platform",
@@ -111,6 +111,23 @@
         "kind": "brief",
         "alt": "Three-step timeline showing the evolution of the Byrock laminitis platform from PTP-100 through PTP-101 to PTP-102."
       },
+      "milestones": [
+        {
+          "year": "2015",
+          "label": "PTP-100 — Early camelid antibody / plasma-derived laminitis program",
+          "status": "draft-program-milestone"
+        },
+        {
+          "year": "2019",
+          "label": "PTP-101 — Synthetic peptide metalloprotease-inhibition concept",
+          "status": "draft-company-deck-milestone"
+        },
+        {
+          "year": "2022",
+          "label": "PTP-102 — Methylated tirilazad / synthetic 21-aminosteroid program",
+          "status": "draft-program-milestone"
+        }
+      ],
       "citations": [
         {
           "label": "Byrock Technologies Overview.pdf"
@@ -132,7 +149,7 @@
     {
       "id": "evidence",
       "title": "Research Evidence to Date",
-      "summary": "Company materials describe in-vitro work, in-vivo pilot work, and supporting internal reports related to induced acute laminitis models. The public evidence narrative should describe the direction of early findings carefully, acknowledge study design and sample-size limitations, and avoid presenting developmental research as conclusive clinical proof.",
+      "summary": "Company materials describe in-vitro work, in-vivo pilot work, and supporting internal reports related to induced acute laminitis models. A 2024 peer-reviewed Frontiers in Microbiology paper describes methylated tirilazad / PTP-102 in oligofructose-induced laminitis; the public evidence narrative should describe findings carefully, acknowledge study design and sample-size limitations, and avoid presenting developmental research as conclusive clinical proof.",
       "tags": [
         "evidence",
         "research",
@@ -155,6 +172,21 @@
         },
         {
           "label": "PRIMER_INFORME_IN_VITRO.pdf"
+        },
+        {
+          "label": "Methylated tirilazad may mitigate oligofructose-induced laminitis in horses",
+          "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2024.1391892/full"
+        },
+        {
+          "label": "Methylated tirilazad may mitigate oligofructose-induced laminitis in horses — PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461245/"
+        }
+      ],
+      "milestones": [
+        {
+          "year": "2024",
+          "label": "Published PTP-102 evidence — peer-reviewed Frontiers in Microbiology paper",
+          "status": "public-evidence-milestone"
         }
       ],
       "allowedBranches": [
@@ -186,6 +218,14 @@
         },
         {
           "label": "PTP-102 regulatory and strategy materials"
+        },
+        {
+          "label": "Compositions and methods for treatment and prevention of diseases utilizing tirilazad salts — Google Patents",
+          "url": "https://patents.google.com/patent/US20250064834A1/"
+        },
+        {
+          "label": "Irish patent journal record — tirilazad salts priority record",
+          "url": "https://ipoi.gov.ie/media/seqmy0p5/2461.pdf"
         }
       ],
       "allowedBranches": [
@@ -224,7 +264,7 @@
     {
       "id": "team",
       "title": "The Team Behind Byrock",
-      "summary": "Byrock brings together founder-led scientific vision, medical and development leadership, and commercial, strategic, project, and corporate support. The public team story should use approved job titles and concise biographies, with Patrick T. Prendergast, PhD, presented as Founder and Inventor.",
+      "summary": "Byrock brings together founder-led scientific vision, medical and development leadership, and commercial, strategic, project, and corporate support. Draft public-facing roles are: Patrick T. Prendergast, PhD — Founder & Inventor; Dr. Daniel Shanahan-Prendergast, MD — Director / Medical & Clinical Strategy; Cormac Jones — Project Development Coordinator; Dr. Julio Cesar Prado, DVM — Veterinary Clinical Advisor; and Anthony Joyce — Legal & Corporate Advisor. Patrick and Cormac are the only titles treated as publishable without further confirmation; the other titles require internal sign-off.",
       "tags": [
         "team",
         "leadership",
@@ -234,6 +274,38 @@
         "kind": "brief",
         "alt": "Portrait-led team spread with a featured founder card and supporting leadership cards using consistent cyan and red rim lighting."
       },
+      "teamMembers": [
+        {
+          "name": "Patrick T. Prendergast, PhD",
+          "title": "Founder & Inventor",
+          "bio": "Microbiologist, inventor, and biotechnology founder with a background in antiviral development, antibody science, and venture creation.",
+          "approval": "approved-for-draft"
+        },
+        {
+          "name": "Dr. Daniel Shanahan-Prendergast, MD",
+          "title": "Director / Medical & Clinical Strategy",
+          "bio": "Medical and clinical-development leader associated with Byrock’s equine laminitis program and study strategy.",
+          "approval": "requires-internal-sign-off"
+        },
+        {
+          "name": "Cormac Jones",
+          "title": "Project Development Coordinator",
+          "bio": "Coordinates project development and partner-facing implementation activity.",
+          "approval": "approved-for-draft"
+        },
+        {
+          "name": "Dr. Julio Cesar Prado, DVM",
+          "title": "Veterinary Clinical Advisor / Clinical Trials Veterinarian",
+          "bio": "Veterinary clinical-trials professional with equine and animal-care experience relevant to laminitis studies.",
+          "approval": "requires-internal-sign-off"
+        },
+        {
+          "name": "Anthony Joyce",
+          "title": "Legal & Corporate Advisor",
+          "bio": "Corporate and legal advisor; use advisor wording unless a formal director or officer appointment is confirmed.",
+          "approval": "requires-internal-sign-off"
+        }
+      ],
       "citations": [
         {
           "label": "Patrick Prendergast - CV (October 2014).pdf"
@@ -251,7 +323,7 @@
     {
       "id": "inventor-spotlight",
       "title": "Patrick T. Prendergast, PhD",
-      "summary": "Founder and inventor Patrick T. Prendergast, PhD, has a longstanding background in microbiology, genetics, virology, antiviral development, antibody science, and biotechnology venture creation. His earlier work, as documented in the dated CV source, provides foundational biography for the Byrock technology story; current titles and later milestones require approval before publication.",
+      "summary": "Founder and inventor Patrick T. Prendergast, PhD, has a longstanding background in microbiology, genetics, virology, antiviral development, antibody science, and biotechnology venture creation. His earlier work, as documented in the dated CV source, provides the foundation for the Byrock technology story. Draft post-October 2014 milestones include KLM Biotechnology and PTP-100 activity in 2014, a controlled ETCR PTP-100 study in 2015, related camel-plasma wound-healing work in 2015–2016, PTP-100 commercial planning in 2018, PTP-101 in 2019, PTP-102 in 2022, evidence-package consolidation in 2023, and peer-reviewed PTP-102 publication in 2024. These are draft public milestones, not final legal or invention-date claims.",
       "tags": [
         "founder",
         "inventor",
