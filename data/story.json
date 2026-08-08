@@ -2,96 +2,373 @@
   "schemaVersion": 1,
   "slug": "byrock-story",
   "title": "The Byrock Story",
-  "description": "Approved placeholder content for the first curated Story Explorer.",
+  "description": "A curated, investigational account of Byrock Technologies, its equine laminitis program, and the path from scientific insight to further development.",
   "rootNodeId": "welcome",
   "nodes": [
     {
       "id": "welcome",
-      "title": "Start here",
-      "summary": "Explore the problem we are trying to solve, the science behind the work, and the path from evidence to impact.",
+      "title": "Byrock Technologies",
+      "summary": "Byrock Technologies is a biotechnology company focused on translating scientific insight into practical veterinary innovation. Its current public story centers on equine laminitis and PTP-102, an investigational therapy being developed for continued study.",
       "tags": [
-        "overview"
+        "company",
+        "overview",
+        "PTP-102"
       ],
       "media": {
-        "kind": "placeholder",
-        "alt": "Abstract red and blue paths branching from a central point."
+        "kind": "brief",
+        "alt": "Dark premium biotech cover visual with the Byrock Technologies identity, subtle cyan linework, and a connection between equine health and therapeutic science."
       },
-      "citations": [],
+      "citations": [
+        {
+          "label": "Byrock Technologies Overview.pdf"
+        },
+        {
+          "label": "BYROCK Deck_ASv1.pdf"
+        },
+        {
+          "label": "Byrock Technologies Ltd Confidential Overview.pdf"
+        }
+      ],
       "allowedBranches": [
         "need",
-        "science",
-        "path"
+        "technology-evolution",
+        "team"
       ]
     },
     {
       "id": "need",
-      "title": "The unmet need",
-      "summary": "Replace this approved section with the specific unmet need, the people or animals affected, and the reason the status quo is not enough.",
+      "title": "The Unmet Need in Laminitis",
+      "summary": "Laminitis is a serious inflammatory condition affecting the tissues that support the hoof. It can cause severe pain, lameness, structural damage, loss of function, and in severe cases euthanasia, leaving owners, veterinarians, and equine professionals in need of better options while the condition’s complexity remains clear.",
       "tags": [
-        "company",
-        "need"
+        "laminitis",
+        "unmet-need",
+        "equine-health"
       ],
       "media": {
-        "kind": "placeholder",
-        "alt": "A quiet clinical landscape with a visible gap in the path ahead."
+        "kind": "brief",
+        "alt": "Illustrated horse profile with the hoof region highlighted in a restrained clinical infographic style."
       },
-      "citations": [],
+      "citations": [
+        {
+          "label": "Byrock Technologies Overview.pdf"
+        },
+        {
+          "label": "Laminitis Study Summary.pdf"
+        },
+        {
+          "label": "Laminitis Final Study Report.pdf"
+        }
+      ],
       "allowedBranches": [
         "welcome",
-        "science"
+        "science",
+        "evidence"
       ]
     },
     {
       "id": "science",
-      "title": "The science",
-      "summary": "Replace this approved section with the scientific hypothesis, mechanism, and plain-language explanation of why the approach may help.",
+      "title": "The Scientific Rationale",
+      "summary": "Byrock’s approach is based on the hypothesis that modulating inflammatory mediators, metalloprotease activity, oxidative stress, and related tissue injury may help reduce lamellar damage in laminitis. PTP-102 is an investigational candidate designed to intervene in those processes; this is a scientific rationale under active study, not a final clinical conclusion.",
       "tags": [
-        "science"
+        "science",
+        "mechanism",
+        "PTP-102"
       ],
       "media": {
-        "kind": "placeholder",
-        "alt": "Layered translucent forms suggesting a biological mechanism."
+        "kind": "brief",
+        "alt": "Simplified mechanism diagram showing inflammatory and tissue-damaging pathways involved in laminitis with an investigational intervention point."
       },
-      "citations": [],
+      "citations": [
+        {
+          "label": "Byrock Technologies Overview.pdf"
+        },
+        {
+          "label": "PTP-102 Confidential Overview v777463.pdf"
+        },
+        {
+          "label": "PRIMER_INFORME_IN_VITRO.pdf"
+        }
+      ],
+      "allowedBranches": [
+        "need",
+        "technology-evolution",
+        "evidence",
+        "trial-design"
+      ]
+    },
+    {
+      "id": "technology-evolution",
+      "title": "From PTP-100 to PTP-102",
+      "summary": "The laminitis program is presented as a sequence of draft program milestones rather than exact invention dates: 2015 PTP-100, an early camelid antibody and plasma-derived concept; 2019 PTP-101, a synthetic peptide approach aimed at metalloprotease inhibition; and 2022 PTP-102, a synthetic nonglucocorticoid 21-aminosteroid and methylated tirilazad program. The sequence represents scientific refinement, not commercial progression or approval.",
+      "tags": [
+        "timeline",
+        "platform",
+        "PTP-100",
+        "PTP-101",
+        "PTP-102"
+      ],
+      "media": {
+        "kind": "brief",
+        "alt": "Three-step timeline showing the evolution of the Byrock laminitis platform from PTP-100 through PTP-101 to PTP-102."
+      },
+      "milestones": [
+        {
+          "year": "2015",
+          "label": "PTP-100 — Early camelid antibody / plasma-derived laminitis program",
+          "status": "draft-program-milestone"
+        },
+        {
+          "year": "2019",
+          "label": "PTP-101 — Synthetic peptide metalloprotease-inhibition concept",
+          "status": "draft-company-deck-milestone"
+        },
+        {
+          "year": "2022",
+          "label": "PTP-102 — Methylated tirilazad / synthetic 21-aminosteroid program",
+          "status": "draft-program-milestone"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Byrock Technologies Overview.pdf"
+        },
+        {
+          "label": "BYROCK Deck_ASv1.pdf"
+        },
+        {
+          "label": "PTP-100 Laminitis Business Plan.pdf"
+        }
+      ],
       "allowedBranches": [
         "welcome",
-        "evidence"
+        "science",
+        "evidence",
+        "team"
       ]
     },
     {
       "id": "evidence",
-      "title": "Evidence and references",
-      "summary": "Add only reviewed evidence here. Each claim should map to a citation that a visitor can open and inspect.",
+      "title": "Research Evidence to Date",
+      "summary": "Company materials describe in-vitro work, in-vivo pilot work, and supporting internal reports related to induced acute laminitis models. A 2024 peer-reviewed Frontiers in Microbiology paper describes methylated tirilazad / PTP-102 in oligofructose-induced laminitis; the public evidence narrative should describe findings carefully, acknowledge study design and sample-size limitations, and avoid presenting developmental research as conclusive clinical proof.",
       "tags": [
-        "research"
+        "evidence",
+        "research",
+        "study",
+        "PTP-102"
       ],
       "media": {
-        "kind": "placeholder",
-        "alt": "Open research notes with highlighted references."
+        "kind": "brief",
+        "alt": "Three-panel research overview summarizing in-vitro work, pilot in-vivo work, and study reports supporting ongoing PTP-102 development."
       },
-      "citations": [],
+      "citations": [
+        {
+          "label": "Laminitis Final Study Report.pdf"
+        },
+        {
+          "label": "Laminitis Study Summary.pdf"
+        },
+        {
+          "label": "PTP-102 Confidential Overview v777463.pdf"
+        },
+        {
+          "label": "PRIMER_INFORME_IN_VITRO.pdf"
+        },
+        {
+          "label": "Methylated tirilazad may mitigate oligofructose-induced laminitis in horses",
+          "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2024.1391892/full"
+        },
+        {
+          "label": "Methylated tirilazad may mitigate oligofructose-induced laminitis in horses — PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11461245/"
+        }
+      ],
+      "milestones": [
+        {
+          "year": "2024",
+          "label": "Published PTP-102 evidence — peer-reviewed Frontiers in Microbiology paper",
+          "status": "public-evidence-milestone"
+        }
+      ],
       "allowedBranches": [
         "science",
-        "path"
+        "regulatory-path",
+        "trial-design",
+        "team"
       ]
     },
     {
-      "id": "path",
-      "title": "From research to impact",
-      "summary": "Replace this section with the regulatory path, trial design, team, and pipeline milestones that are approved for publication.",
+      "id": "regulatory-path",
+      "title": "Regulatory Pathway",
+      "summary": "PTP-102 is investigational and is being advanced through a staged veterinary development and regulatory pathway. Byrock’s work includes refining the evidence package, study strategy, manufacturing considerations, and product development plan; further evidence and documentation remain important before any approval or market availability could be discussed.",
       "tags": [
         "regulatory",
-        "team",
-        "pipeline"
+        "development",
+        "pathway"
       ],
       "media": {
-        "kind": "placeholder",
-        "alt": "A measured route from laboratory work toward real-world impact."
+        "kind": "brief",
+        "alt": "Development milestone ladder showing research, study planning, regulatory engagement, further evidence generation, and a future commercialization pathway."
       },
-      "citations": [],
+      "citations": [
+        {
+          "label": "Fwd Draft request for PSC Product Development Plan.pdf"
+        },
+        {
+          "label": "Fwd CE claim.pdf"
+        },
+        {
+          "label": "PTP-102 regulatory and strategy materials"
+        },
+        {
+          "label": "Compositions and methods for treatment and prevention of diseases utilizing tirilazad salts — Google Patents",
+          "url": "https://patents.google.com/patent/US20250064834A1/"
+        },
+        {
+          "label": "Irish patent journal record — tirilazad salts priority record",
+          "url": "https://ipoi.gov.ie/media/seqmy0p5/2461.pdf"
+        }
+      ],
+      "allowedBranches": [
+        "evidence",
+        "trial-design",
+        "pipeline"
+      ]
+    },
+    {
+      "id": "trial-design",
+      "title": "How the Program Is Being Studied",
+      "summary": "The program is being developed through staged studies that consider relevant horse populations, treatment timing, clinical observations, time-based follow-up, and outcome measures such as lameness assessment, hoof-related findings, and tissue or biomarker analyses where appropriate. Broader validation, larger-scale evidence, and continued development work are still required before definitive claims can be made.",
+      "tags": [
+        "trial-design",
+        "study",
+        "clinical-development"
+      ],
+      "media": {
+        "kind": "brief",
+        "alt": "Clinical study flow diagram showing horse selection, treatment timing, observation windows, outcome assessment, and follow-up."
+      },
+      "citations": [
+        {
+          "label": "Laminitis Final Study Report.pdf"
+        },
+        {
+          "label": "Laminitis Study Summary.pdf"
+        }
+      ],
+      "allowedBranches": [
+        "evidence",
+        "regulatory-path",
+        "pipeline"
+      ]
+    },
+    {
+      "id": "team",
+      "title": "The Team Behind Byrock",
+      "summary": "Byrock brings together founder-led scientific vision, medical and development leadership, and commercial, strategic, project, and corporate support. Draft public-facing roles are: Patrick T. Prendergast, PhD — Founder & Inventor; Dr. Daniel Shanahan-Prendergast, MD — Director / Medical & Clinical Strategy; Cormac Jones — Project Development Coordinator; Dr. Julio Cesar Prado, DVM — Veterinary Clinical Advisor; and Anthony Joyce — Legal & Corporate Advisor. Patrick and Cormac are the only titles treated as publishable without further confirmation; the other titles require internal sign-off.",
+      "tags": [
+        "team",
+        "leadership",
+        "founder"
+      ],
+      "media": {
+        "kind": "brief",
+        "alt": "Portrait-led team spread with a featured founder card and supporting leadership cards using consistent cyan and red rim lighting."
+      },
+      "teamMembers": [
+        {
+          "name": "Patrick T. Prendergast, PhD",
+          "title": "Founder & Inventor",
+          "bio": "Microbiologist, inventor, and biotechnology founder with a background in antiviral development, antibody science, and venture creation.",
+          "approval": "approved-for-draft"
+        },
+        {
+          "name": "Dr. Daniel Shanahan-Prendergast, MD",
+          "title": "Director / Medical & Clinical Strategy",
+          "bio": "Medical and clinical-development leader associated with Byrock’s equine laminitis program and study strategy.",
+          "approval": "requires-internal-sign-off"
+        },
+        {
+          "name": "Cormac Jones",
+          "title": "Project Development Coordinator",
+          "bio": "Coordinates project development and partner-facing implementation activity.",
+          "approval": "approved-for-draft"
+        },
+        {
+          "name": "Dr. Julio Cesar Prado, DVM",
+          "title": "Veterinary Clinical Advisor / Clinical Trials Veterinarian",
+          "bio": "Veterinary clinical-trials professional with equine and animal-care experience relevant to laminitis studies.",
+          "approval": "requires-internal-sign-off"
+        },
+        {
+          "name": "Anthony Joyce",
+          "title": "Legal & Corporate Advisor",
+          "bio": "Corporate and legal advisor; use advisor wording unless a formal director or officer appointment is confirmed.",
+          "approval": "requires-internal-sign-off"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Patrick Prendergast - CV (October 2014).pdf"
+        },
+        {
+          "label": "Internal approved team bios"
+        }
+      ],
+      "allowedBranches": [
+        "inventor-spotlight",
+        "pipeline",
+        "welcome"
+      ]
+    },
+    {
+      "id": "inventor-spotlight",
+      "title": "Patrick T. Prendergast, PhD",
+      "summary": "Founder and inventor Patrick T. Prendergast, PhD, has a longstanding background in microbiology, genetics, virology, antiviral development, antibody science, and biotechnology venture creation. His earlier work, as documented in the dated CV source, provides the foundation for the Byrock technology story. Draft post-October 2014 milestones include KLM Biotechnology and PTP-100 activity in 2014, a controlled ETCR PTP-100 study in 2015, related camel-plasma wound-healing work in 2015–2016, PTP-100 commercial planning in 2018, PTP-101 in 2019, PTP-102 in 2022, evidence-package consolidation in 2023, and peer-reviewed PTP-102 publication in 2024. These are draft public milestones, not final legal or invention-date claims.",
+      "tags": [
+        "founder",
+        "inventor",
+        "Patrick Prendergast"
+      ],
+      "media": {
+        "kind": "brief",
+        "alt": "Founder spotlight featuring Patrick T. Prendergast, PhD, with a short scientific career summary and a path from invention to platform evolution."
+      },
+      "citations": [
+        {
+          "label": "Patrick Prendergast - CV (October 2014).pdf"
+        }
+      ],
+      "allowedBranches": [
+        "technology-evolution",
+        "team",
+        "welcome"
+      ]
+    },
+    {
+      "id": "pipeline",
+      "title": "Pipeline and What Comes Next",
+      "summary": "PTP-102 is Byrock’s lead public program in equine laminitis, with continued development, evidence generation, and strategic advancement ahead. Broader platform or adjacent programs should appear only when approved for public disclosure, and no launch timing or market availability should be implied.",
+      "tags": [
+        "pipeline",
+        "future",
+        "development"
+      ],
+      "media": {
+        "kind": "brief",
+        "alt": "Simple product pipeline display with PTP-102 highlighted as the lead public investigational program."
+      },
+      "citations": [
+        {
+          "label": "Byrock Technologies Overview.pdf"
+        },
+        {
+          "label": "Internal pipeline approvals"
+        }
+      ],
       "allowedBranches": [
         "welcome",
-        "evidence"
+        "team",
+        "regulatory-path"
       ]
     }
   ]

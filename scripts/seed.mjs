@@ -1,23 +1,10 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const target = path.join(root, 'data/story.json');
-const story = {
-  schemaVersion: 1,
-  slug: 'byrock-story',
-  title: 'The Byrock Story',
-  description: 'Approved placeholder content for the first curated Story Explorer.',
-  rootNodeId: 'welcome',
-  nodes: [
-    { id: 'welcome', title: 'Start here', summary: 'Explore the problem we are trying to solve, the science behind the work, and the path from evidence to impact.', tags: ['overview'], media: { kind: 'placeholder', alt: 'Abstract red and blue paths branching from a central point.' }, citations: [], allowedBranches: ['need', 'science', 'path'] },
-    { id: 'need', title: 'The unmet need', summary: 'Replace this approved section with the specific unmet need, the people or animals affected, and the reason the status quo is not enough.', tags: ['company', 'need'], media: { kind: 'placeholder', alt: 'A quiet clinical landscape with a visible gap in the path ahead.' }, citations: [], allowedBranches: ['welcome', 'science'] },
-    { id: 'science', title: 'The science', summary: 'Replace this approved section with the scientific hypothesis, mechanism, and plain-language explanation of why the approach may help.', tags: ['science'], media: { kind: 'placeholder', alt: 'Layered translucent forms suggesting a biological mechanism.' }, citations: [], allowedBranches: ['welcome', 'evidence'] },
-    { id: 'evidence', title: 'Evidence and references', summary: 'Add only reviewed evidence here. Each claim should map to a citation that a visitor can open and inspect.', tags: ['research'], media: { kind: 'placeholder', alt: 'Open research notes with highlighted references.' }, citations: [], allowedBranches: ['science', 'path'] },
-    { id: 'path', title: 'From research to impact', summary: 'Replace this section with the regulatory path, trial design, team, and pipeline milestones that are approved for publication.', tags: ['regulatory', 'team', 'pipeline'], media: { kind: 'placeholder', alt: 'A measured route from laboratory work toward real-world impact.' }, citations: [], allowedBranches: ['welcome', 'evidence'] }
-  ]
-};
+const story = JSON.parse(await readFile(target, 'utf8'));
 
 await mkdir(path.dirname(target), { recursive: true });
 await writeFile(target, `${JSON.stringify(story, null, 2)}\n`);
