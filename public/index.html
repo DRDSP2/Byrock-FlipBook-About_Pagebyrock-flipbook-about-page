@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A curated, branching introduction to Byrock." />
+    <title>Byrock Story Explorer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead"><a class="brand" href="/">BYROCK <span>STORY EXPLORER</span></a><span class="status">APPROVED CONTENT ONLY</span></header>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">A living story, explored at your pace</p>
+        <h1 id="page-title">Follow the question.<br /><em>Find the path.</em></h1>
+        <p class="lede">A visual, text-accessible way to understand why Byrock exists, what we are researching, and where the evidence leads.</p>
+        <button id="begin" class="primary">Begin the story <span aria-hidden="true">→</span></button>
+      </section>
+      <section id="explorer" class="explorer" hidden aria-live="polite">
+        <div class="visual" id="visual" role="img" aria-label="Story illustration placeholder"></div>
+        <div class="story-copy"><p class="eyebrow" id="node-tag"></p><h2 id="node-title"></h2><p id="node-summary"></p><div id="citations" class="citations"></div><nav id="branches" aria-label="Choose the next story section"></nav><button id="back" class="text-button">← Back</button></div>
+      </section>
+      <footer><span>Byrock Technologies</span><a href="/health">System health</a></footer>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
