@@ -1,4 +1,5 @@
 import { createServer } from 'node:http';
+import story from "../data/story.json" with { type: "json" };
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -8,9 +9,8 @@ const port = Number(process.env.PORT || 3000);
 const storyPath = path.resolve(root, process.env.STORY_DATA_PATH || './data/story.json');
 const staticRoot = path.join(root, 'public');
 
-async function readStory() {
-  const source = await readFile(storyPath, 'utf8');
-  return JSON.parse(source);
+function readStory() {
+  return story;
 }
 
 function json(res, status, body) {
